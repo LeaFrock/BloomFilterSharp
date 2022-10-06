@@ -1,0 +1,53 @@
+﻿
+Microsoft Visual Studio Solution File, Format Version 12.00
+# Visual Studio Version 17
+VisualStudioVersion = 17.3.32922.545
+MinimumVisualStudioVersion = 10.0.40219.1
+Project("{9A19103F-16F7-4668-BE54-9A1E7A4F7556}") = "BloomFilterSharp.Memory", "src\BloomFilterSharp.Memory\BloomFilterSharp.Memory.csproj", "{F9B565C4-4F69-4758-9574-2041135606F6}"
+EndProject
+Project("{9A19103F-16F7-4668-BE54-9A1E7A4F7556}") = "BloomFilterSharp.Abstractions", "src\BloomFilterSharp.Abstractions\BloomFilterSharp.Abstractions.csproj", "{C12616D1-A591-4AD7-B50B-AAA728C7DD61}"
+EndProject
+Project("{9A19103F-16F7-4668-BE54-9A1E7A4F7556}") = "BloomFilterSharp.Hashing", "src\BloomFilterSharp.Hashing\BloomFilterSharp.Hashing.csproj", "{697CDE53-40A0-4752-90FF-8E97456544F8}"
+EndProject
+Project("{2150E333-8FDC-42A3-9474-1A3956D46DE8}") = "src", "src", "{4BF696EF-8538-404D-ABD8-E46DA904E6C9}"
+EndProject
+Project("{2150E333-8FDC-42A3-9474-1A3956D46DE8}") = "tests", "tests", "{F52693F7-1EB8-427E-82E8-983CA2C3CA9B}"
+EndProject
+Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "BloomFilterSharp.Memory.Tests", "tests\BloomFilterSharp.Memory.Tests\BloomFilterSharp.Memory.Tests.csproj", "{5C77170C-9773-4824-A984-CFF4CFE4B0AD}"
+EndProject
+Global
+	GlobalSection(SolutionConfigurationPlatforms) = preSolution
+		Debug|Any CPU = Debug|Any CPU
+		Release|Any CPU = Release|Any CPU
+	EndGlobalSection
+	GlobalSection(ProjectConfigurationPlatforms) = postSolution
+		{F9B565C4-4F69-4758-9574-2041135606F6}.Debug|Any CPU.ActiveCfg = Debug|Any CPU
+		{F9B565C4-4F69-4758-9574-2041135606F6}.Debug|Any CPU.Build.0 = Debug|Any CPU
+		{F9B565C4-4F69-4758-9574-2041135606F6}.Release|Any CPU.ActiveCfg = Release|Any CPU
+		{F9B565C4-4F69-4758-9574-2041135606F6}.Release|Any CPU.Build.0 = Release|Any CPU
+		{C12616D1-A591-4AD7-B50B-AAA728C7DD61}.Debug|Any CPU.ActiveCfg = Debug|Any CPU
+		{C12616D1-A591-4AD7-B50B-AAA728C7DD61}.Debug|Any CPU.Build.0 = Debug|Any CPU
+		{C12616D1-A591-4AD7-B50B-AAA728C7DD61}.Release|Any CPU.ActiveCfg = Release|Any CPU
+		{C12616D1-A591-4AD7-B50B-AAA728C7DD61}.Release|Any CPU.Build.0 = Release|Any CPU
+		{697CDE53-40A0-4752-90FF-8E97456544F8}.Debug|Any CPU.ActiveCfg = Debug|Any CPU
+		{697CDE53-40A0-4752-90FF-8E97456544F8}.Debug|Any CPU.Build.0 = Debug|Any CPU
+		{697CDE53-40A0-4752-90FF-8E97456544F8}.Release|Any CPU.ActiveCfg = Release|Any CPU
+		{697CDE53-40A0-4752-90FF-8E97456544F8}.Release|Any CPU.Build.0 = Release|Any CPU
+		{5C77170C-9773-4824-A984-CFF4CFE4B0AD}.Debug|Any CPU.ActiveCfg = Debug|Any CPU
+		{5C77170C-9773-4824-A984-CFF4CFE4B0AD}.Debug|Any CPU.Build.0 = Debug|Any CPU
+		{5C77170C-9773-4824-A984-CFF4CFE4B0AD}.Release|Any CPU.ActiveCfg = Release|Any CPU
+		{5C77170C-9773-4824-A984-CFF4CFE4B0AD}.Release|Any CPU.Build.0 = Release|Any CPU
+	EndGlobalSection
+	GlobalSection(SolutionProperties) = preSolution
+		HideSolutionNode = FALSE
+	EndGlobalSection
+	GlobalSection(NestedProjects) = preSolution
+		{F9B565C4-4F69-4758-9574-2041135606F6} = {4BF696EF-8538-404D-ABD8-E46DA904E6C9}
+		{C12616D1-A591-4AD7-B50B-AAA728C7DD61} = {4BF696EF-8538-404D-ABD8-E46DA904E6C9}
+		{697CDE53-40A0-4752-90FF-8E97456544F8} = {4BF696EF-8538-404D-ABD8-E46DA904E6C9}
+		{5C77170C-9773-4824-A984-CFF4CFE4B0AD} = {F52693F7-1EB8-427E-82E8-983CA2C3CA9B}
+	EndGlobalSection
+	GlobalSection(ExtensibilityGlobals) = postSolution
+		SolutionGuid = {9B879D7C-2A75-4BA7-9C1D-7A26C19550CB}
+	EndGlobalSection
+EndGlobal
