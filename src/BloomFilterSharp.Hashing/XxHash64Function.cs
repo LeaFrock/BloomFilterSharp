@@ -1,4 +1,7 @@
-﻿using System.IO.Hashing;
+﻿using System.Buffers.Binary;
+using System.IO.Hashing;
+using System.Runtime.CompilerServices;
+using System.Runtime.InteropServices;
 using BloomFilterSharp.Abstractions;
 
 namespace BloomFilterSharp.Hashing
@@ -8,8 +11,10 @@ namespace BloomFilterSharp.Hashing
         public ulong Hash64(ReadOnlySpan<byte> source, ulong seed)
         {
             // Waiting for https://github.com/dotnet/runtime/issues/76279
-            var bytes = XxHash64.Hash(source, (long)seed);
-            return BitConverter.ToUInt64(bytes);
+            Unsafe.SkipInit(out ulong hash);
+            XxHash64.TryHash(source, MemoryMarshal.AsBytes(MemoryMarshal.CreateSpan(ref hash, 1)), out _, (long)seed);
+            var hashCode = BitConverter.IsLittleEndian ? hash : BinaryPrimitives.ReverseEndianness(hash);
+            return hashCode;
         }
     }
 }
